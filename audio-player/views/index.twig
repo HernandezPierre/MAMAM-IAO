@@ -1,0 +1,80 @@
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/libs/semantic-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <title>ML - Audio</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <div class="ui search">
+                <div class="ui icon input">
+                    <input class="prompt" type="text" placeholder="Search...">
+                    <i class="icon search"></i>
+                </div>
+                <div class="results"></div>
+            </div>
+
+            <div class="songs ui secondary vertical pointing menu">
+                <a class="item" href="{{ url_root }}">
+                    <i class="folder outline icon"></i> /
+                </a>
+
+                {% for folder in songs_folders %}
+                    <a class="item" href="{{ url_root }}?folder={{ request.query.folder ~ (request.query.folder is empty ? '' : '/') ~ folder }}">
+                        <i class="folder outline icon"></i> {{ folder }}
+                    </a>
+                {% endfor %}
+
+                {% for song in songs %}
+                    {% if song matches '/^.{1,}(.mid|.mp3)$/' %}
+                        <div class="item song"
+                             data-song="{{ url_root }}/data/songs/{{ (request.query.folder is defined) ? request.query.folder ~ '/' : '' }}{{ song }}"
+                             data-img="{{ url_root }}/data/songs/{{ (request.query.folder is defined) ? request.query.folder ~ '/' : '' }}{{ song|replace({'.mp3':'.png'}) }}">
+                            {{ song }}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="body-song">
+
+            <div class="ui large header">Player</div>
+            <div id="body-song__player"></div>
+            <div id="body-song__player-buttons">
+                <button class="ui icon button" data-action="play">
+                    <i class="play icon"></i>
+                </button>
+                <button class="ui icon button" data-action="pause">
+                    <i class="pause icon"></i>
+                </button>
+                <button class="ui icon button" data-action="stop">
+                    <i class="stop icon"></i>
+                </button>
+            </div>
+
+
+            <div class="ui large header">Partition</div>
+            <div id="body-song__partition">
+                <img src="" alt="">
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/libs/semantic-ui.min.js"></script>
+
+    <script src="js/libs/tone.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/wavesurfer.min.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
