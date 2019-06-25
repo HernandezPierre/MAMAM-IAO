@@ -1,0 +1,118 @@
+.ui.search .prompt {
+	box-shadow: 3px 3px 10px green;
+}
+
+.sidebar {
+	float: right;
+}
+
+.container {
+	width: 90%;
+}
+
+.body-song{
+	margin-left: inherit;
+	text-align : center;
+}
+
+#body-song__player-buttons{
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+}
+
+
+
+/* coleur en fonction action des boutons*/
+.ui.button:hover{
+	background: white;
+	border: 2px solid grey;
+}
+
+.ui.button:hover>.play{
+	color: green;
+}
+
+.ui.button:hover>.pause{
+	color: orange;
+}
+
+.ui.button:hover>.stop{
+	color: red;
+}
+
+.ui.button:focus{
+	background: white;
+	border: 2px solid green;
+}
+
+.ui.button:focus>.play{
+	color: green;
+}
+
+.ui.button:focus>.pause{
+	color: orange;
+}
+
+.ui.button:focus>.stop{
+	color: red;
+}
+
+.ui.button:active {
+	background: white;
+	border: 2px solid purple;
+}
+
+.ui.button:active>.icon{
+	color: blue;
+}
+
+/*menu navigation musique*/
+.ui.secondary.vertical.pointing.menu .item{
+	background: #e0e1e2;
+	border: 1px solid grey;
+	border-radius: 25px!important;
+	margin-bottom: 2px;
+	
+}
+
+.ui.secondary.vertical.pointing.menu .item:hover{
+	background: white;
+	border: 1px solid blue;
+	border-radius: 25px!important;
+	margin-bottom: 2px;
+	color: blue;
+}
+
+.ui.secondary.vertical.pointing.menu .item:focus{
+	background: #00FF7F;
+	border: 1px solid white;
+	border-radius: 25px!important;
+	margin-bottom: 2px;
+	color: white;
+}
+
+
+.ui.secondary.vertical.pointing.menu .item.song{
+	background: white;
+	border: 1px solid grey;
+	border-radius: 25px!important;
+	margin-bottom: 2px;
+	color: purple;
+}
+
+.ui.secondary.vertical.pointing.menu .item.song:hover{
+	background: #DB7093;
+	border: 1px solid grey;
+	border-radius: 25px!important;
+	margin-bottom: 2px;
+	color: white;
+}
+
+.ui.secondary.vertical.pointing.menu .item.song:active{
+	background: #blue;
+	border: 1px solid grey;
+	border-radius: 25px!important;
+	margin-bottom: 2px;
+	color: white;
+}
