@@ -4,15 +4,15 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="css/font.css">
-
+		<link rel="icon" type="image/png" href="data/img/mamamia.png" />
     <title>ML - Audio</title>
 </head>
 <body>
-
+		<img src="/data/img/mamamia.png" id="logo"></img>
     <div class="container">
 
         <div class="sidebar">
-
+						<!--
             <div class="ui search">
                 <div class="ui icon input">
                     <input class="prompt" type="text" placeholder="Search...">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="results"></div>
             </div>
-
+						-->
             <div class="songs ui secondary vertical pointing menu">
                 <a class="item" href="{{ url_root }}">
                     <i class="folder outline icon"></i> /
@@ -61,9 +61,11 @@
 							</div>
 						</div>
 
-            <div class="ui large header">Partition</div>
+						
+            <div class="ui large header" id="part-div">
+						</div>
             <div id="body-song__partition">
-                <img src="" alt="">
+											
             </div>
 
 
@@ -75,7 +77,7 @@
 
     <script src="js/libs/tone.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/wavesurfer.min.js"></script>
-
+		<script src="js/partition.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

@@ -11,4 +11,6 @@ Aller à la racine du projet web MAMAM-IA-master\audio-player\ et lancer la comm
 
 Avoir des fichiers .mid ou/et .mp3 dans MAMAM-IA-master\audio-player\data\songs\
 
+Avoir des partition avec les memes titres que les audios en .pdf dans MAMAM-IA-master\audio-player\data\partition
+
 Tester dans une page web http://localhost:3000

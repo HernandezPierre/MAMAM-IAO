@@ -1,5 +1,12 @@
+#logo {
+	position: absolute;
+	width: 100px;
+	top: -5px;
+	left: -5px;
+}
+
 .ui.search .prompt {
-	box-shadow: 3px 3px 10px green;
+	box-shadow: 3px 3px 10px #f79630;
 }
 
 .sidebar {
@@ -20,8 +27,6 @@
 	margin-bottom: 5%;
 
 }
-
-
 
 /* coleur en fonction action des boutons*/
 .ui.button:hover{
@@ -60,11 +65,11 @@
 
 .ui.button:active {
 	background: white;
-	border: 2px solid purple;
+	border: 2px solid #7d2ae8;
 }
 
 .ui.button:active>.icon{
-	color: blue;
+	color: #7d2ae8;
 }
 
 /*menu navigation musique*/
@@ -78,14 +83,14 @@
 
 .ui.secondary.vertical.pointing.menu .item:hover{
 	background: white;
-	border: 1px solid blue;
+	border: 1px solid #7d2ae8;
 	border-radius: 25px!important;
 	margin-bottom: 2px;
 	color: blue;
 }
 
 .ui.secondary.vertical.pointing.menu .item:focus{
-	background: #00FF7F;
+	background: #00c4cc;
 	border: 1px solid white;
 	border-radius: 25px!important;
 	margin-bottom: 2px;
@@ -102,7 +107,7 @@
 }
 
 .ui.secondary.vertical.pointing.menu .item.song:hover{
-	background: #DB7093;
+	background: #00c4cc;
 	border: 1px solid grey;
 	border-radius: 25px!important;
 	margin-bottom: 2px;
@@ -110,9 +115,13 @@
 }
 
 .ui.secondary.vertical.pointing.menu .item.song:active{
-	background: #blue;
+	background: #7d2ae8;
 	border: 1px solid grey;
 	border-radius: 25px!important;
 	margin-bottom: 2px;
 	color: white;
+}
+
+.ui.secondary.vertical.pointing.menu{
+	border-right-color: white;
 }
