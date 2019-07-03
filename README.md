@@ -1,8 +1,11 @@
 ![LOGO](utils/logo.png)
 # MAMAM-IA
 projet - creation musicale post-mortem
+
+
 # Le Dataset Utilisé
-Vous pouvez retrouver un Dataset qui a été utilisé à cette adresse: [dropbox] (https://www.dropbox.com/s/dhbb0dzdshe22la/song%20classify.rar?dl=0)
+Vous pouvez retrouver un Dataset qui a été utilisé à cette adresse:
+https://www.dropbox.com/s/dhbb0dzdshe22la/song%20classify.rar?dl=0
 
 # Test Interface Web Locale (Windows)
 
@@ -26,6 +29,7 @@ L'audio Player représente la partie IHM qui sera utilisé comme plateforme de m
 # La Partie Create Song 
 Create Songquant à lui concerne la partie machine learning, plus particulièrement le moteur d'apprentissage que l'on effectue sur nos musiques au format .mid.
 Il est preférable d'utiliser des notebooks pour executer LSTM.PY et la partie PREDICT.PY.
+Exemple :https://colab.research.google.com/drive/1BHnVYw4ABsKy2lH34PEDRs6TFj4jW1fM
 
 
 
