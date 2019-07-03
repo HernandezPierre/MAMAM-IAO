@@ -1,3 +1,4 @@
+![LOGO](utils/logo.png)
 # MAMAM-IA
 projet - creation musicale post-mortem
 # Le Dataset Utilisé
