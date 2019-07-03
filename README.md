@@ -1,5 +1,7 @@
 # MAMAM-IA
 projet - creation musicale post-mortem
+# Le Dataset Utilisé
+Vous pouvez retrouver un Dataset qui a été utilisé à cette adresse: [dropbox] (https://www.dropbox.com/s/dhbb0dzdshe22la/song%20classify.rar?dl=0)
 
 # Test Interface Web Locale (Windows)
 
@@ -16,6 +18,7 @@ Avoir des partition avec les memes titres que les audios en .pdf dans MAMAM-IA-m
 Tester dans une page web http://localhost:3000
 
 # Audio Player
+![IHM](utils/IHM.png)
 
 L'audio Player représente la partie IHM qui sera utilisé comme plateforme de mise a disposition au client du contenu.
 
