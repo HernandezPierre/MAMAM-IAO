@@ -16,6 +16,7 @@ Avoir des partition avec les memes titres que les audios en .pdf dans MAMAM-IA-m
 Tester dans une page web http://localhost:3000
 
 # Audio Player
+![IHM](utils/IHM.png)
 
 L'audio Player représente la partie IHM qui sera utilisé comme plateforme de mise a disposition au client du contenu.
 
